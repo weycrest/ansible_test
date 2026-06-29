@@ -4,6 +4,12 @@
   become: true
 
   tasks:
-  - name: install htop
+  - name: install packages
     package:
-      name: openttd
+      name:
+        - htop
+        - tmux
+        - openttd
+        - neovim
+        - vim-nox
+        - aisleriot
